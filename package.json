@@ -1,0 +1,42 @@
+{
+  "name": "性能优化",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config ./webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js",
+    "dev": "webpack --progress",
+    "analyze": "webpack-bundle-analyzer dist/stats.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "bootstrap": "^5.3.3",
+    "cache-loader": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^5.6.3",
+    "image-minimizer-webpack-plugin": "^4.1.1",
+    "jquery": "^3.7.1",
+    "node-notifier": "^10.0.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "sharp": "^0.33.5",
+    "speed-measure-webpack-v5-plugin": "^1.5.2",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.11",
+    "thread-loader": "^4.0.4",
+    "webpack": "^5.97.1",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
